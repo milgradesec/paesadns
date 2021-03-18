@@ -1,0 +1,28 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build and Push
+        run: |
+          docker buildx build -f build.Dockerfile --platform linux/arm64 . --tag milgradesec/coredns:arm64 --push
+          docker buildx build -f build.Dockerfile --platform linux/amd64 . --tag milgradesec/coredns:amd64 --push
+          docker manifest create milgradesec/coredns:v1.8.3 milgradesec/coredns:arm64 milgradesec/coredns:amd64
+          docker manifest create milgradesec/coredns:latest milgradesec/coredns:arm64 milgradesec/coredns:amd64
+          docker manifest push --purge milgradesec/coredns:v1.8.3
+          docker manifest push --purge milgradesec/coredns:latest

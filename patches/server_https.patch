@@ -1,0 +1,30 @@
+From 38d2612ae1f89be9905fe43c82c5eef04c67a220 Mon Sep 17 00:00:00 2001
+From: milgradesec <38557680+milgradesec@users.noreply.github.com>
+Date: Thu, 21 Jan 2021 11:50:29 +0100
+Subject: [PATCH] allow doh without tls.Config
+
+Signed-off-by: milgradesec <38557680+milgradesec@users.noreply.github.com>
+---
+ core/dnsserver/server_https.go | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/core/dnsserver/server_https.go b/core/dnsserver/server_https.go
+index 7292311e..4e259fe5 100644
+--- a/core/dnsserver/server_https.go
++++ b/core/dnsserver/server_https.go
+@@ -39,12 +39,6 @@ func NewServerHTTPS(addr string, group []*Config) (*ServerHTTPS, error) {
+ 		// Should we error if some configs *don't* have TLS?
+ 		tlsConfig = conf.TLSConfig
+ 	}
+-	if tlsConfig == nil {
+-		return nil, fmt.Errorf("DoH requires TLS to be configured, see the tls plugin")
+-	}
+-	// http/2 is recommended when using DoH. We need to specify it in next protos
+-	// or the upgrade won't happen.
+-	tlsConfig.NextProtos = []string{"h2", "http/1.1"}
+ 
+ 	// Use a custom request validation func or use the standard DoH path check.
+ 	var validator func(*http.Request) bool
+-- 
+2.30.0.windows.1
+
