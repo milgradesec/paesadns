@@ -15,7 +15,7 @@ RUN git clone --branch ${TAG} --single-branch --depth 1 https://github.com/cored
     cd coredns && \
     git apply patches/server_https.patch && \
     go get github.com/milgradesec/ratelimit@v1.0.0 && \
-    go get -u github.com/milgradesec/filter@d43587463f760abdc54c9c3b1da4ca4825b1624d && \
+    go get -d github.com/milgradesec/filter@main && \
     go get github.com/miekg/dns@v1.1.40 && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${TAG}
 
