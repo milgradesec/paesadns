@@ -17,6 +17,7 @@ RUN git clone --branch ${TAG} --single-branch --depth 1 https://github.com/cored
     go get github.com/milgradesec/ratelimit@v1.0.0 && \
     go get github.com/milgradesec/filter@d43587463f760abdc54c9c3b1da4ca4825b1624d && \
     go get github.com/miekg/dns@v1.1.40 && \
+    go mod tidy && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${TAG}
 
 FROM alpine:3.13
