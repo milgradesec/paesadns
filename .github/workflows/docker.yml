@@ -22,7 +22,7 @@ jobs:
         run: |
           docker buildx build -f build.Dockerfile --platform linux/arm64 . --tag milgradesec/coredns:arm64 --push
           docker buildx build -f build.Dockerfile --platform linux/amd64 . --tag milgradesec/coredns:amd64 --push
-          docker manifest create milgradesec/coredns:v1.8.3 milgradesec/coredns:arm64 milgradesec/coredns:amd64
+          docker manifest create milgradesec/coredns:v1.8.4 milgradesec/coredns:arm64 milgradesec/coredns:amd64
           docker manifest create milgradesec/coredns:latest milgradesec/coredns:arm64 milgradesec/coredns:amd64
-          docker manifest push --purge milgradesec/coredns:v1.8.3
+          docker manifest push --purge milgradesec/coredns:v1.8.4
           docker manifest push --purge milgradesec/coredns:latest
