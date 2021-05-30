@@ -23,6 +23,4 @@ jobs:
           docker buildx build -f build.Dockerfile --platform linux/arm64 . --tag ghcr.io/milgradesec/coredns:arm64 --push
           docker buildx build -f build.Dockerfile --platform linux/amd64 . --tag ghcr.io/milgradesec/coredns:amd64 --push
           docker manifest create ghcr.io/milgradesec/coredns:v1.8.4 ghcr.io/milgradesec/coredns:arm64 ghcr.io/milgradesec/coredns:amd64
-          docker manifest create ghcr.io/milgradesec/coredns:latest ghcr.io/milgradesec/coredns:arm64 ghcr.io/milgradesec/coredns:amd64
           docker manifest push --purge ghcr.io/milgradesec/coredns:v1.8.4
-          docker manifest push --purge ghcr.io/milgradesec/coredns:latest
