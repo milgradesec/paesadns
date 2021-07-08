@@ -14,9 +14,7 @@ COPY . .
 
 RUN git clone --branch ${TAG} --single-branch --depth 1 https://github.com/coredns/coredns.git && \
     cp plugin.cfg coredns/ && \
-    cp -r patches coredns/ && \
     cd coredns && \
-    git apply patches/server_https.patch && \
     go mod tidy && \
     go get github.com/milgradesec/ratelimit@v1.0.0 && \
     go get github.com/milgradesec/filter@v1.2.0 && \
