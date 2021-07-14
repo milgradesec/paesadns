@@ -1,4 +1,4 @@
-FROM --platform=amd64 golang:1.17beta1
+FROM --platform=amd64 golang:1.17rc1
 
 ARG TAG=v1.8.4
 ARG TARGETPLATFORM
