@@ -1,4 +1,4 @@
-FROM --platform=amd64 golang:1.16.7
+FROM --platform=amd64 golang:1.16.7 AS builder
 
 ARG TARGETPLATFORM
 ARG TARGETOS
@@ -24,11 +24,12 @@ RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/c
 
 FROM alpine:3.14.1
 
-RUN apk update && apk add --no-cache ca-certificates
+RUN apk update && apk add --no-cache ca-certificates \
+    && addgroup -g 1000 coredns \
+    && adduser -u 1000 -G coredns -s /sbin/nologin -D coredns
 
-FROM scratch
+COPY --from=builder /go/src/app/coredns/coredns /coredns
 
-COPY --from=0 /go/src/app/coredns/coredns /coredns
-COPY --from=1 /etc/ssl/certs /etc/ssl/certs
+USER coredns
 
 ENTRYPOINT ["/coredns"]
