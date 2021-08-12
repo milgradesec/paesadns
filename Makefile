@@ -1,7 +1,10 @@
 VERSION:=v1.8.4
 
 .PHONY: all
-all: 
+all: build manifest
+
+.PHONY: build
+build:
 	docker buildx build . -f build.Dockerfile \
 		--build-arg=CLOUDFLARED_VERSION=$(VERSION) \
 		--platform linux/arm64 \
@@ -14,5 +17,7 @@ all:
 		--tag ghcr.io/milgradesec/coredns:amd64 \
 		--push
 
+.PHONY: manifest
+manifest:	
     docker manifest create ghcr.io/milgradesec/coredns:$(VERSION) ghcr.io/milgradesec/coredns:arm64 ghcr.io/milgradesec/coredns:amd64
 	docker manifest push --purge ghcr.io/milgradesec/coredns:$(VERSION)
