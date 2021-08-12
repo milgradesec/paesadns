@@ -14,7 +14,5 @@ all:
 		--tag ghcr.io/milgradesec/coredns:amd64 \
 		--push
 
-    docker manifest create ghcr.io/milgradesec/coredns:$(VERSION) \
-		ghcr.io/milgradesec/coredns:arm64 \
-		ghcr.io/milgradesec/coredns:amd64
+    docker manifest create ghcr.io/milgradesec/coredns:$(VERSION) ghcr.io/milgradesec/coredns:arm64 ghcr.io/milgradesec/coredns:amd64
 	docker manifest push --purge ghcr.io/milgradesec/coredns:$(VERSION)
