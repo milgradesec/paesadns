@@ -8,7 +8,7 @@ all:
 		--tag ghcr.io/milgradesec/coredns:arm64 \
 		--push
 	
-    docker buildx build . -f build.Dockerfile \
+	docker buildx build . -f build.Dockerfile \
 		--build-arg=VERSION=$(VERSION) \
 		--platform linux/amd64 \
 		--tag ghcr.io/milgradesec/coredns:amd64 \
