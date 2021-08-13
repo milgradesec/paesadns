@@ -1,7 +1,7 @@
 VERSION:=v1.8.4
 
 .PHONY: all
-all: 
+all:
 	docker buildx build . -f build.Dockerfile \
 		--build-arg=VERSION=$(VERSION) \
 		--platform linux/arm64 \
