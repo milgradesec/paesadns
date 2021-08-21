@@ -1,3 +1,3 @@
 # PaesaDNS
 
-![Docker](https://github.com/milgradesec/paesadns/workflows/Docker/badge.svg)
+[![Docker Build and Push](https://github.com/milgradesec/paesadns/actions/workflows/docker.yml/badge.svg)](https://github.com/milgradesec/paesadns/actions/workflows/docker.yml)
