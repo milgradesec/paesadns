@@ -22,7 +22,7 @@ RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/c
     go get github.com/miekg/dns@v1.1.43 && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
-FROM alpine:3.14.1
+FROM alpine:3.14.2
 
 RUN apk update && apk add --no-cache ca-certificates \
     && addgroup -g 1000 coredns \
