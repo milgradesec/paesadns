@@ -1,4 +1,4 @@
-VERSION:=v1.8.4
+VERSION:=master
 
 .PHONY: all
 all:
