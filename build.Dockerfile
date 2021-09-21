@@ -16,9 +16,9 @@ COPY . .
 RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/coredns/coredns.git && \
     cp plugin.cfg coredns/ && \
     cd coredns && \
-    go mod tidy && \
-    go get github.com/milgradesec/filter@v1.2.1 && \
-    go get github.com/miekg/dns@v1.1.43 && \
+    # go mod tidy && \
+    # go get github.com/milgradesec/filter@v1.2.1 && \
+    # go get github.com/miekg/dns@v1.1.43 && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
 FROM alpine:3.14.2
