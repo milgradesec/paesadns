@@ -28,4 +28,5 @@ RUN apk update && apk add --no-cache ca-certificates \
 COPY --from=builder /go/src/app/coredns/coredns /coredns
 
 USER coredns
+
 ENTRYPOINT ["/coredns"]
