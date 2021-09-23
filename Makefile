@@ -2,14 +2,14 @@ VERSION:=v1.8.5
 
 .PHONY: all
 all:
-	docker buildx build . --log-level=debug \
+	docker --log-level=debug buildx build . \
 		-f build.Dockerfile \
 		--build-arg=VERSION=$(VERSION) \
 		--platform linux/arm64 \
 		--tag ghcr.io/milgradesec/coredns:arm64 \
 		--push
 	
-	docker buildx build . --log-level=debug \
+	docker --log-level=debug buildx build . \
 		-f build.Dockerfile \
 		--build-arg=VERSION=$(VERSION) \
 		--platform linux/amd64 \
