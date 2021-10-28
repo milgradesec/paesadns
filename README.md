@@ -18,6 +18,8 @@
 
 🌍 Powered by Cloudflare global network.
 
+❤️ Hobby project.
+
 🚀 Running at **<https://dns.paesa.es/dns-query>**
 
 ## Setup
