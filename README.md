@@ -22,6 +22,8 @@
 
 🚀 Running at **<https://dns.paesa.es/dns-query>**
 
+## How it Works
+
 ## Setup
 
 ### Google Chrome
