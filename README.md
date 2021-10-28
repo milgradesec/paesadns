@@ -16,6 +16,8 @@
 
 🛠 Built with [CoreDNS](https://github.com/coredns/coredns) and my [filter](https://github.com/milgradesec/filter) plugin.
 
+🌍 Powered by Cloudflare global network.
+
 🚀 Running at **<https://dns.paesa.es/dns-query>**
 
 ## Setup
