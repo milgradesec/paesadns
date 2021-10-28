@@ -16,12 +16,22 @@
 
 🛠 Built with [CoreDNS](https://github.com/coredns/coredns) and my [filter](https://github.com/milgradesec/filter) plugin.
 
-🌍 Powered by Cloudflare global network.
+🌍 Powered by [Cloudflare global network](https://www.cloudflare.com/network/).
 
 ❤️ Hobby project.
 
 🚀 Running at **<https://dns.paesa.es/dns-query>**
 
 ## Setup
+
+### Google Chrome
+
+### Microsoft Edge
+
+### Mozilla Firefox
+
+### Windows
+
+### Android
 
 ## FAQ
