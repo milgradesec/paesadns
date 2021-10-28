@@ -1,6 +1,6 @@
 # PaesaDNS
 
-**PaesaDNS** is a free DNS over HTTPS service with advertising, tracking and telemetry blocking.
+**PaesaDNS** is a free DNS over HTTPS service with advertising, tracking, telemetry and malware blocking.
 
 ## Overview
 
