@@ -32,6 +32,10 @@
 
 ### Windows
 
+### MacOS
+
 ### Android
+
+### iOS
 
 ## FAQ
