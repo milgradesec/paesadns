@@ -18,7 +18,7 @@
 
 🌍 Powered by [Cloudflare global network](https://www.cloudflare.com/network/).
 
-❤️ Hobby project, Selfhosted.
+❤️ Hobby project.
 
 🚀 Running at **<https://dns.paesa.es/dns-query>**
 
