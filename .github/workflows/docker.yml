@@ -6,6 +6,7 @@ on:
     paths:
       - "build.Dockerfile"
       - "Makefile"
+      - "plugin.cfg"
 
 jobs:
   build:
