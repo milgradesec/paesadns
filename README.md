@@ -68,3 +68,5 @@ Other Chromium-based browsers like Brave, Opera, Vivaldi... can be configured fo
 ### iOS -->
 
 ## FAQ
+
+🚧 Under construction...
