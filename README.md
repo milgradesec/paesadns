@@ -48,6 +48,17 @@
 
 ### Mozilla Firefox
 
+1. Click the menu button.
+2. Select __Settings__.
+3. Scroll down to the __Network Settings__ section.
+4. Click on the __Settings__ button.
+5. Click __Enable DNS over HTTPS__ checkbox.
+6. Select __Custom__ provider and set it to **<https://dns.paesa.es/dns-query{?dns}>**
+
+### Other Browsers
+
+Other Chromium-based browsers like Brave, Opera, Vivaldi... can be configued following the same steps as Google Chrome
+
 ### Windows
 
 ### MacOS
