@@ -52,7 +52,7 @@
 2. Select __Settings__.
 3. Scroll down to the __Network Settings__ section.
 4. Click on the __Settings__ button.
-5. Click __Enable DNS over HTTPS__ checkbox.
+5. Enable the __Enable DNS over HTTPS__ checkbox.
 6. Select __Custom__ provider and set it to **<https://dns.paesa.es/dns-query{?dns}>**
 
 ### Other Browsers
