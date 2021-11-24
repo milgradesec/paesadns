@@ -57,7 +57,7 @@
 
 ### Other Browsers
 
-Other Chromium-based browsers like Brave, Opera, Vivaldi... can be configued following the same steps as Google Chrome
+Other Chromium-based browsers like Brave, Opera, Vivaldi... can be configued following the same steps as Google Chrome.
 
 ### Windows
 
