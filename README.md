@@ -59,12 +59,12 @@
 
 Other Chromium-based browsers like Brave, Opera, Vivaldi... can be configured following the same steps as Google Chrome.
 
-### Windows
+<!-- ### Windows
 
 ### MacOS
 
 ### Android
 
-### iOS
+### iOS -->
 
 ## FAQ
