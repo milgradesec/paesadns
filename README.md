@@ -22,9 +22,9 @@
 
 🚀 Running at **<https://dns.paesa.es/dns-query>**
 
-## How it Works
+<!-- ## How it Works
 
-🚧 Under construction...
+🚧 Under construction... -->
 
 ## Setup
 
