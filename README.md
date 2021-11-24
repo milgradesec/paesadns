@@ -35,7 +35,7 @@
 3. Scroll down to the __Privacy and Security__ section.
 4. Click on __Security__.
 5. Enable __Use secure DNS__.
-6. Select __With Custom__ provider and set it to `https://dns.paesa.es/dns-query{?dns}`
+6. Select __With Custom__ provider and set it to <https://dns.paesa.es/dns-query{?dns}>
 
 ### Microsoft Edge
 
@@ -44,7 +44,7 @@
 3. Go to the __Privacy, search and services__ tab.
 4. Scroll down to the __Security__ section.
 5. Enable __Use secure DNS to specify how to lookup the network address for websites__.
-6. Select __Choose a service provider__ and set it to `https://dns.paesa.es/dns-query{?dns}`
+6. Select __Choose a service provider__ and set it to <https://dns.paesa.es/dns-query{?dns}>
 
 ### Mozilla Firefox
 
