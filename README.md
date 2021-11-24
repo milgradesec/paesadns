@@ -37,6 +37,13 @@
 
 ### Microsoft Edge
 
+1. Click on the three-dot menu in your browser window.
+2. Open __Settings__.
+3. Go to the __Privacy, search and services__ tab.
+4. Scroll down to the __Security__ section.
+5. Enable __Use secure DNS to specify how to lookup the network address for websites__.
+6. Select __Choose a service provider__ and set it to `https://dns.paesa.es/dns-query{?dns}`
+
 ### Mozilla Firefox
 
 ### Windows
