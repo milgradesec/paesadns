@@ -28,6 +28,13 @@
 
 ### Google Chrome
 
+1. Click on the three-dot menu in your browser window.
+2. Open __Settings__.
+3. Scroll down to the __Privacy and Security__ section.
+4. Click on __Security__.
+5. Enable __Use secure DNS__.
+6. Select __With Custom__ provider and set it to `https://dns.paesa.es/dns-query{?dns}`
+
 ### Microsoft Edge
 
 ### Mozilla Firefox
