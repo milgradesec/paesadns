@@ -19,7 +19,7 @@ RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/c
     go get github.com/milgradesec/filter@v1.2.2 && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
-FROM alpine:3.14.3
+FROM alpine:3.15.0
 
 RUN apk update && apk add --no-cache ca-certificates \
     && addgroup -g 1000 coredns \
