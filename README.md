@@ -1,5 +1,7 @@
 # PaesaDNS
 
+[![Docker Release](https://github.com/milgradesec/paesadns/actions/workflows/docker-release.yml/badge.svg)](https://github.com/milgradesec/paesadns/actions/workflows/docker-release.yml)
+
 **PaesaDNS** is a free DNS over HTTPS service with advertising, tracking, telemetry and malware blocking.
 
 ## Overview
