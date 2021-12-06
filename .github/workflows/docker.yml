@@ -37,7 +37,7 @@ jobs:
       # run: make
 
       - name: Build and Push
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v2.7.0
         with:
           file: build.Dockerfile
           platforms: linux/amd64,linux/arm64
