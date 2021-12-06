@@ -3,11 +3,11 @@ name: Docker Release
 on:
   push:
     branches: [main]
-    # paths:
-    #   - "build.Dockerfile"
-    #   - "Makefile"
-    #   - "plugin.cfg"
-    #   - ".github\workflows\docker-release.yml"
+    paths:
+      - "build.Dockerfile"
+      - "Makefile"
+      - "plugin.cfg"
+      - ".github/workflows/docker-release.yml"
 
 env:
   REGISTRY: ghcr.io
