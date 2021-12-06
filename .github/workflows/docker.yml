@@ -3,10 +3,10 @@ name: Docker Build and Push
 on:
   push:
     branches: [main]
-    paths:
-      - "build.Dockerfile"
-      - "Makefile"
-      - "plugin.cfg"
+    # paths:
+    #   - "build.Dockerfile"
+    #   - "Makefile"
+    #   - "plugin.cfg"
 
 env:
   REGISTRY: ghcr.io
