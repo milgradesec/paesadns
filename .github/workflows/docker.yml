@@ -11,6 +11,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.actor }}/coredns
+  VERSION: v1.8.6
 
 jobs:
   build:
@@ -40,7 +41,7 @@ jobs:
         uses: docker/build-push-action@v2.7.0
         with:
           file: build.Dockerfile
-          # build-args: VERSION=v1.8.6
+          build-args: VERSION=${{ env.VERSION }}
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:test
