@@ -43,7 +43,7 @@ jobs:
           # build-args: VERSION=v1.8.6
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.IMAGE_NAME }}:test
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:test
 
       # Sign the resulting Docker image digest except on PRs and private repos
       # The keyless signing process records signatures on the Rekor public
@@ -55,7 +55,7 @@ jobs:
       # - name: Sign the published Docker image
       #   env:
       #     COSIGN_EXPERIMENTAL: "true"
-        # This step uses the identity token to provision an ephemeral certificate
-        # against the sigstore community Fulcio instance, and records it to the
-        # sigstore community Rekor transparency log.
-        # run: cosign sign ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
+      # This step uses the identity token to provision an ephemeral certificate
+      # against the sigstore community Fulcio instance, and records it to the
+      # sigstore community Rekor transparency log.
+      # run: cosign sign ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
