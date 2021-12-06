@@ -1,4 +1,4 @@
-VERSION:=v1.8.6-test
+VERSION:=v1.8.6
 
 .PHONY: all
 all:

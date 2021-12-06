@@ -2,7 +2,7 @@ name: Docker Build and Push
 
 on:
   push:
-    branches: [main]
+    branches: [ $default-branch ]
     paths:
       - "build.Dockerfile"
       - "Makefile"
@@ -40,6 +40,7 @@ jobs:
         uses: docker/build-push-action@v2.7.0
         with:
           file: build.Dockerfile
+          build-args: VERSION=v1.8.6
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ env.IMAGE_NAME }}:test
