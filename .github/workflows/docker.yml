@@ -2,7 +2,7 @@ name: Docker Build and Push
 
 on:
   push:
-    branches: [$default-branch]
+    branches: [main]
     paths:
       - "build.Dockerfile"
       - "Makefile"
