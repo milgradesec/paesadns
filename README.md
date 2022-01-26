@@ -1,4 +1,4 @@
-# PaesaDNS
+# ⚡PaesaDNS
 
 [![Docker Release](https://github.com/milgradesec/paesadns/actions/workflows/docker-release.yml/badge.svg)](https://github.com/milgradesec/paesadns/actions/workflows/docker-release.yml)
 
