@@ -22,8 +22,6 @@ RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/c
 
 FROM gcr.io/distroless/static-debian11:nonroot
 
-RUN apt-get update && apt-get install -y wget
-
 COPY --from=builder /go/src/app/coredns/coredns /coredns
 
 USER nonroot
