@@ -33,29 +33,29 @@
 ### Google Chrome
 
 1. Click on the three-dot menu in your browser window.
-2. Open __Settings__.
-3. Scroll down to the __Privacy and Security__ section.
-4. Click on __Security__.
-5. Enable __Use secure DNS__.
-6. Select __With Custom__ provider and set it to **<https://dns.paesa.es/dns-query{?dns}>**
+2. Open **Settings**.
+3. Scroll down to the **Privacy and Security** section.
+4. Click on **Security**.
+5. Enable **Use secure DNS**.
+6. Select **With Custom** provider and set it to **<https://dns.paesa.es/dns-query{?dns}>**
 
 ### Microsoft Edge
 
 1. Click on the three-dot menu in your browser window.
-2. Open __Settings__.
-3. Go to the __Privacy, search and services__ tab.
-4. Scroll down to the __Security__ section.
-5. Enable __Use secure DNS to specify how to lookup the network address for websites__.
-6. Select __Choose a service provider__ and set it to **<https://dns.paesa.es/dns-query{?dns}>**
+2. Open **Settings**.
+3. Go to the **Privacy, search and services** tab.
+4. Scroll down to the **Security** section.
+5. Enable **Use secure DNS to specify how to lookup the network address for websites**.
+6. Select **Choose a service provider** and set it to **<https://dns.paesa.es/dns-query{?dns}>**
 
 ### Mozilla Firefox
 
 1. Click the menu button.
-2. Select __Settings__.
-3. Scroll down to the __Network Settings__ section.
-4. Click on the __Settings__ button.
-5. Enable the __Enable DNS over HTTPS__ checkbox.
-6. Select __Custom__ provider and set it to **<https://dns.paesa.es/dns-query{?dns}>**
+2. Select **Settings**.
+3. Scroll down to the **Network Settings** section.
+4. Click on the **Settings** button.
+5. Enable the **Enable DNS over HTTPS** checkbox.
+6. Select **Custom** provider and set it to **<https://dns.paesa.es/dns-query{?dns}>**
 
 ### Other Browsers
 
