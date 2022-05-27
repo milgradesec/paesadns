@@ -11,7 +11,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.actor }}/coredns
-  VERSION: v1.9.2
+  VERSION: v1.9.3
 
 jobs:
   build:
