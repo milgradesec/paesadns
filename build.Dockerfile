@@ -1,4 +1,4 @@
-FROM --platform=amd64 golang:1.18.4 AS builder
+FROM --platform=amd64 golang:1.18.5 AS builder
 
 ARG TARGETPLATFORM
 ARG TARGETOS
@@ -17,7 +17,7 @@ RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/c
     cp plugin.cfg coredns/ && \
     cd coredns && \
     go get github.com/miekg/dns@v1.1.50 && \
-    go get github.com/milgradesec/filter@v1.2.4 && \
+    go get github.com/milgradesec/filter@v1.3.0 && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
 FROM gcr.io/distroless/static-debian11:nonroot
