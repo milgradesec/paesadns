@@ -61,11 +61,15 @@
 
 Other Chromium-based browsers like Brave, Opera, Vivaldi... can be configured following the same steps as Google Chrome.
 
+### Android
+
+- Use the [Intra](https://play.google.com/store/apps/details?id=app.intra) app.
+
+- Use the [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen) app.
+
 <!-- ### Windows
 
 ### MacOS
-
-### Android
 
 ### iOS -->
 
