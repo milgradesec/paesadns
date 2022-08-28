@@ -10,7 +10,10 @@ ARG VERSION
 ENV GO111MODULE=on \
     CGO_ENABLED=0
 
+LABEL org.opencontainers.image.source="https://github.com/milgradesec/paesadns"
+
 WORKDIR /go/src/app
+
 COPY . .
 
 RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/coredns/coredns.git && \
@@ -22,7 +25,7 @@ RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/c
 
 FROM gcr.io/distroless/static-debian11:nonroot
 
-COPY --from=builder /go/src/app/coredns/coredns /coredns
+COPY --from=builder --chown=nonroot /go/src/app/coredns/coredns /coredns
 
 USER nonroot
 ENTRYPOINT ["/coredns"]
