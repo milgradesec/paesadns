@@ -19,7 +19,7 @@ COPY . .
 RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/coredns/coredns.git && \
     cp plugin.cfg coredns/ && \
     cd coredns && \
-    go mod tidy && \
+    # go mod tidy && \
     go get github.com/milgradesec/filter@main && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
