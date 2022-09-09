@@ -3,10 +3,6 @@ name: Release
 on:
   push:
     branches: [main]
-    paths:
-      - "build.Dockerfile"
-      - "plugin.cfg"
-      - ".github/workflows/docker-release.yml"
 
 env:
   REGISTRY: ghcr.io
