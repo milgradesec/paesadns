@@ -19,8 +19,8 @@ COPY . .
 RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/coredns/coredns.git && \
     cp plugin.cfg coredns/ && \
     cd coredns && \
-    go get github.com/miekg/dns@v1.1.50 && \
-    go get github.com/milgradesec/filter@v1.3.0 && \
+    # go get github.com/miekg/dns@v1.1.50 && \
+    go get github.com/milgradesec/filter@main && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
 FROM gcr.io/distroless/static-debian11:nonroot
