@@ -23,5 +23,5 @@ jobs:
         run: |
           docker --log-level=debug buildx build . \
           --file build.Dockerfile \
-          --platform linux/amd64 \
+          --platform linux/arm64 \
           --tag paesadns:$(date +%s)
