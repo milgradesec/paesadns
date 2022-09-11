@@ -1,6 +1,5 @@
 # ⚡PaesaDNS
 
-[![CI](https://github.com/milgradesec/paesadns/actions/workflows/ci.yml/badge.svg)](https://github.com/milgradesec/paesadns/actions/workflows/ci.yml)
 [![Release](https://github.com/milgradesec/paesadns/actions/workflows/release.yml/badge.svg)](https://github.com/milgradesec/paesadns/actions/workflows/release.yml)
 
 **PaesaDNS** is a free DNS over HTTPS service with advertising, tracking, telemetry and malware blocking.
