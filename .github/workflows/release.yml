@@ -9,7 +9,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.actor }}/coredns
-  VERSION: v1.9.4
+  VERSION: v1.10.0
 
 jobs:
   build:
