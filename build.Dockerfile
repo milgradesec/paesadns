@@ -11,7 +11,7 @@ ENV GO111MODULE=on \
     CGO_ENABLED=0
 
 LABEL org.opencontainers.image.source="https://github.com/milgradesec/paesadns"
-LABEL org.opencontainers.image.description="Custom CoreDNS with filtering and blocking plugins that power PaesaDNS"
+LABEL org.opencontainers.image.description="Custom CoreDNS image with filtering and blocking plugins that power PaesaDNS"
 
 WORKDIR /go/src/app
 
