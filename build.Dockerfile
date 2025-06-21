@@ -1,4 +1,4 @@
-FROM --platform=amd64 golang:1.22.1 AS builder
+FROM --platform=amd64 golang:1.24.4 AS builder
 
 ARG TARGETPLATFORM
 ARG TARGETOS
@@ -19,7 +19,7 @@ COPY . .
 RUN git clone --branch ${VERSION} --single-branch --depth 1 https://github.com/coredns/coredns.git && \
     cp plugin.cfg coredns/ && \
     cd coredns && \
-    go mod tidy -go=1.19 && \
+    go mod tidy -go=1.24 && \
     go get github.com/milgradesec/filter@main && \
     make SYSTEM="GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT}" GITCOMMIT=${VERSION}
 
