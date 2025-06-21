@@ -9,7 +9,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: milgradesec/coredns
-  VERSION: v1.11.2
+  VERSION: v1.12.2
 
 jobs:
   build:
